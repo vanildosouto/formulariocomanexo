@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Email com anexo</title>
+  </head>
+  <body>
+    <h2>Farmárcia Sua vida fácil</h2>
+    <form action="/enviar" method="post" accept-charset="utf-8" enctype="multipart/form-data" accept="image/png|image/jpg|application/pdf">
+      <fieldset>
+      <legend>Deixe seus dados que entraremos em contato</legend>
+      <label>Nome:</label> <input type="text" placeholder="Nome" name="nome" required><br>
+      <label>Email:</label> <input type="email" placeholder="Email" name="email" required><br>
+      <label>Receita:</label> <input type="file" name="receita" required><br>
+      <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </body>
+</html>
